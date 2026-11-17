@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>onclick</title>
+</head>
+<body>
+<h1>change color</h1>
+<button onClick="changeColor()">change color</button>
+<script>
+
+let color=["blue", "green", "yellow", "orange"];
+let i=0;
+function changeColor(){
+document.body.style.backgroundColor=color[i];
+i++;
+if(i==color.length){
+i=0;
+}
+}
+
+</script>
+
+</body>
+</html>
